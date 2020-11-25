@@ -1,6 +1,6 @@
 # uclser20
 
-This repository contains the code for the following paper. If you use this code or part of it, please cite:
+This repository will contain the code for the following paper. If you use this code or part of it, please cite:
 
 >Eduardo Fonseca, Diego Ortego, Kevin McGuinness, Noel E. O'Connor, Xavier Serra, "Unsupervised Contrastive Learning of Sound Event Representations", arXiv, 2020.
       
