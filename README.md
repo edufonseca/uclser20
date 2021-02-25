@@ -12,11 +12,12 @@ In the meantime, make sure to take a look at our paper!
 
 ### Reference
 ```
-@article{fonseca2020fsd50k,
+@inproceedings{fonseca2021unsupervised,
   title={Unsupervised Contrastive Learning of Sound Event Representations},
   author={Fonseca, Eduardo and Ortego, Diego and McGuinness, Kevin and O'Connor, Noel E. and Serra, Xavier},
-  journal={arXiv preprint arXiv},
-  year={2020}
+  booktitle={2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year={2021},
+  organization={IEEE}
 }
 
 ```
