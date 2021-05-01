@@ -115,6 +115,9 @@ We provide pre-trained encoders as described in our paper, for ResNet-18, VGG-li
 
 You are welcome to contact eduardo.fonseca@upf.edu should you have any question/suggestion. You can also create an issue.
 
+## Acknowledgment
+
+This work is a collaboration between the <a href="https://www.upf.edu/web/mtg" target="_blank">MTG-UPF</a> and <a href="https://old.insight-centre.org/" target="_blank">Dublin City University's Insight Centre</a>. This work is partially supported by Science Foundation Ireland (SFI) under grant number SFI/15/SIRG/3283 and by the Young European Research University Network under a 2020 mobility award. Eduardo Fonseca is partially supported by a Google Faculty Research Award 2018. The authors are grateful for the GPUs donated by NVIDIA.
 
 ## References
 
