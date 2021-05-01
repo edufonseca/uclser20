@@ -1,0 +1,100 @@
+ctrl:
+  count_trial: 1
+  hdf5_path: ../../data_nvme/FSDnoisy18k/data_hdf5/
+  output_file: my_output
+  root: ../../data_nvme/FSDnoisy18k/data/FSDnoisy18k.meta/
+  root_data_test: ../../data_nvme/FSDnoisy18k/data/FSDnoisy18k.audio_test/
+  root_data_train: ../../data_nvme/FSDnoisy18k/data/FSDnoisy18k.audio_train/
+da:
+  F: 20
+  Fshift: 10
+  T: 20
+  Tshift: 30
+  W: -1
+  awgn_stdev_gen: 0.01
+  blur_max_ksize: -1
+  blur_stdev_x: -1
+  comp_alpha: 0.75
+  do_blur: false
+  do_compansion: true
+  do_freq_mask: false
+  do_rand_freq_shift: false
+  do_rand_time_shift: false
+  do_randcrop: true
+  do_time_mask: false
+  do_time_reversal: false
+  do_time_warp: false
+  m_f: 2
+  m_t: 2
+  mask_val: min
+  rc_ratio: !!python/tuple
+  - 0.75
+  - 1.3333333333333333
+  rc_scale: !!python/tuple
+  - 0.8
+  - 1
+  reduce_mask_range: 0
+extract:
+  audio_len_s: 1
+  diff: false
+  eps: 1.1e-08
+  fill: rep
+  fmax: 10500
+  fmin: 50
+  fs: 22050
+  hop_length_samples: 220
+  htk: false
+  load_mode: varup
+  load_mode_test: all
+  load_mode_train: all
+  log: true
+  mel_basis_unit: null
+  method: mel
+  mono: true
+  n_fft: 2048
+  n_mels: 96
+  normalize_audio: true
+  normalize_mel_bands: false
+  patch_hop: 50
+  patch_len: 101
+  spectrogram_type: power
+  win_length_samples: 660
+  window: hamming_asymmetric
+learn:
+  CL_pos_mix: mix_out_clip    # mix-back with background clips sampled at random
+  CL_pos_mix_alpha: 0.05      # background level for mix-back
+  CL_positives: within_clip   # Stochastic sampling of TF patches (aka Temporal Proximity sampling)
+  M:   # epochs where the learning rate is reduced
+  - 325
+  - 425
+  batch_size: 128
+  cuda_dev: 1
+  dataset: FSDnoisy18k
+  early_stopping_do: false
+  early_stopping_patience: 100
+  embed_size: 512
+  epoch: 500
+  experiment_name: my_experiment_name_unsup  # change this string to set folder names where models and metrics are saved
+  global_pooling: gapgmp
+  head_num: 1
+  head_size: 2
+  initial_epoch: 1
+  low_dim: 512
+  lr: 0.03
+  lr_schedule: multistep
+  method: Contrastive    # Unsupervised Contrastive Learning
+  mlp_hidden: 512
+  momentum: 0.9
+  network: res18
+  num_classes: 20
+  opt: sgd
+  pretrained: False
+  seed_initialization: 271828
+  temp: 0.2
+  test_batch_size: 100
+  train_mode: dynamic_slice   # static_slice
+  val_mode: unbalanced
+  wd: 1e-4
+  downstream: 0      # Set to 1 to load a pretrained model for downstream task (lin eval or finetuning)
+  lin_eval: 0        # Set to 1 to freeze everything except a linear layer on top for linear eval
+  train_on_clean: 0  # Set to 0 to train on the noisy set (default)
