@@ -6,9 +6,10 @@ This repository contains the code for the following paper. If you use this code 
 
 <p align="center">
 
-| <a href="https://arxiv.org/pdf/2011.07616.pdf" target="_blank">arXiv</a>     | <a href="http://www.eduardofonseca.net/assets/slides/ICASSP21_slides_uclser.pdf" target="_blank">slides</a>  | <a href="http://www.eduardofonseca.net/assets/posters/ICASSP21_poster_uclser.pdf" target="_blank">poster</a> | <a href="http://www.eduardofonseca.net/papers/2021/05/01/unsupervised-contrastive-learning-icassp.html" target="_blank">blog post</a> | video |
+| <a href="https://arxiv.org/pdf/2011.07616.pdf" target="_blank">arXiv</a>     | <a href="http://www.eduardofonseca.net/assets/slides/ICASSP21_slides_uclser.pdf" target="_blank">slides</a>  | <a href="http://www.eduardofonseca.net/assets/posters/ICASSP21_poster_uclser.pdf" target="_blank">poster</a> | <a href="http://www.eduardofonseca.net/papers/2021/05/01/unsupervised-contrastive-learning-icassp.html" target="_blank">blog post</a> | <a href="https://youtu.be/Tm3vnetCvDk" target="_blank">video</a> |
 | :----:  |   :----:  |  :----: | :----: | :----: |
 
+	
 </p>
 
 We propose to learn sound event representations using the proxy task of contrasting differently augmented views of sound events, inspired by SimCLR [[1]](#references). The different views are computed by:  
