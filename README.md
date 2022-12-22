@@ -12,7 +12,13 @@ This repository contains the code for the following paper. If you use this code 
 	
 </p>
 
-We propose to learn sound event representations using the proxy task of contrasting differently augmented views of sound events, inspired by SimCLR [[1]](#references). The different views are computed by:  
+### Update:
+1) If you are interested in this paper, you can find an extended version of it with additional explanations and discussion in Sections 6.1, 6.2, and 6.3 of my <a href="http://www.eduardofonseca.net/assets/pdf/phd_thesis_eduardofonseca_final_corr.pdf" target="_blank">PhD thesis</a>.
+2) If you are interested in contrastive audio representation learning, you can have a look at our other paper that received the “Best Audio Representation Learning Paper Award” at WASPAA 2021: <a href="https://arxiv.org/abs/2105.02132" target="_blank">Self-Supervised Learning from Automatically Separated Sound Scenes</a>.
+
+---
+
+In "Unsupervised Contrastive Learning of Sound Event Representations", we propose to learn sound event representations using the proxy task of contrasting differently augmented views of sound events, inspired by SimCLR [[1]](#references). The different views are computed by:  
 - sampling TF patches at random within every input clip,  
 - mixing resulting patches with unrelated background clips (*mix-back*), and  
 - other data augmentations (DAs) (RRC, compression, noise addition, SpecAugment [[2]](#references)).
@@ -114,15 +120,12 @@ We provide pre-trained encoders as described in our paper, for ResNet-18, VGG-li
 
 ## Contact
 
-You are welcome to contact eduardo.fonseca@upf.edu should you have any question/suggestion. You can also create an issue.
+You are welcome to contact efonseca@google.com should you have any question/suggestion. You can also create an issue.
 
 ## Acknowledgment
 
 This work is a collaboration between the <a href="https://www.upf.edu/web/mtg" target="_blank">MTG-UPF</a> and <a href="https://old.insight-centre.org/" target="_blank">Dublin City University's Insight Centre</a>. This work is partially supported by Science Foundation Ireland (SFI) under grant number SFI/15/SIRG/3283 and by the Young European Research University Network under a 2020 mobility award. Eduardo Fonseca is partially supported by a Google Faculty Research Award 2018. The authors are grateful for the GPUs donated by NVIDIA.
 
-## If you are interested in contrastive audio representation learning ...
-
-You can have a look at our latest paper: <a href="https://arxiv.org/abs/2105.02132" target="_blank">Self-Supervised Learning from Automatically Separated Sound Scenes</a>
 
 ## References
 
